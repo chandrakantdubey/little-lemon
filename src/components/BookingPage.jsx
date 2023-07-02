@@ -31,7 +31,6 @@ const submitAPI = function(formData) {
   return true;
 };
 
-
 function initializeTimes(){
   const today = new Date()
   return fetchAPI(today)

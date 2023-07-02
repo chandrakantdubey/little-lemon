@@ -1,12 +1,53 @@
+import { NavLink, Link } from "react-router-dom"
+
 export default function Nav() {
+  const active= {
+    "backgroundColor": "#495E57",
+    "color": "#FFFFFF",
+    "scale": 1.1,
+    "borderRadius": "5px",
+  }
   return (
-    <nav>
-        <li><a href='#home'>Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#menu'>Menu</a></li>
-        <li><a href='#reservations'>Reservations</a></li>
-        <li><a href='#order-online'>Order Online</a></li>
-        <li><a href='#login'>Login</a></li>
-    </nav>
+    <>
+    <Link
+      to='#home'
+      className="nav-item nav-link"
+    >
+      Home
+    </Link>
+    <a
+      href="#about"
+      className="nav-item nav-link"
+    >
+      About
+    </a>
+    <a
+      href="#menu"
+      className="nav-item nav-link"
+    >
+      Menu
+    </a>
+    <NavLink
+      to='/reservations'
+      className="nav-item nav-link"
+      style={({isActive})=> isActive?active:{}}
+    >
+      Reservations
+    </NavLink>
+    <NavLink
+      to='/order'
+      className="nav-item nav-link"
+      style={({isActive})=> isActive?active:{}}
+    >
+      Order Online
+    </NavLink>
+    <NavLink
+      to='/login'
+      className="nav-item nav-link"
+      style={({isActive})=> isActive?active:{}}
+    >
+      Login
+    </NavLink>
+    </>
   )
 }

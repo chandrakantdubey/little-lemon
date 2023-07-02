@@ -1,7 +1,105 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+
+*{
+    font-family: 'Markazi Text', serif;
 }
 
+/* fonts */
+.title{
+    font-size: 64px;
+    font-weight: medium;
+}
+.subtitle{
+    font-size: 40px;
+    font-weight: 40px;
+}
+.lead-text{
+    font-size: 18px;
+    font-weight: medium;
+    font-family: 'Karla', sans-serif;
+}
+.section-title-uppercase{
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-text{
+    font-size: 20px;
+    font-weight: medium;
+}
+.nav-text a:hover{
+    scale: 1.1;
+    text-decoration: underline;
+}
+.specials-text{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+}
+.para-text{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.highlight-text{
+    font-size: 16px;
+    font-weight: medium;
+}
+
+/* colors */
+.green-bg{
+    background: #495E57;
+}
+.green-text{
+    color: #495E57;
+}
+.yellow-bg{
+    background-color: #F4CE14;
+}
+.yellow-text{
+    color: #F4CE14;
+}
+.white-text{
+    color: #fff;
+}
+
+/* call to action */
+.callToAction_img-container{
+    display: flex;
+    justify-content: center;
+}
+.callToAction_img{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 20px;
+}
+
+
+/* width of the page */
+.layout-width{
+    max-width: 840px;
+    margin: auto;
+}
+
+.btn{
+    font-size: 18px;
+    font-weight: medium;
+    font-family: 'Karla', sans-serif;
+    padding: 0.75rem 3rem;
+    border-radius: 16px;
+}
+.menu-card{
+    background-color: #EDEFEE;
+    border-radius: 16px;
+}
+.specials-img{
+    max-height: 180px;
+    border: 0;
+    width: 100%;
+}
+.price{
+    color: #EE9972;
+}
