@@ -1,33 +1,30 @@
-import { Link } from "react-router-dom"
-import Logo from '../little-lemon-assets/icons_assets/Logo.svg'
-import Nav from "./Nav"
+import { Link } from 'react-router-dom'
+import logo from '../little-lemon-assets/icons_assets/Logo.svg'
+import home from '../little-lemon-assets/icons_assets/home icon.svg'
+
 
 export default function Header() {
   return (
-    <div className="layout-width">
-      <header className="row header mx-0 navbar navbar-expand-md nav-text">
-        <div className="container">
-          <Link to="/">
-            <img src={Logo} className="navbar-brand" alt='little-lemon-logo' />
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <nav className="collapse navbar-collapse" id="navbarSupportedContent">
-            <div className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <Nav />
-            </div>
+    <header className="page-width container-fluid navbar navbar-expand-md d-flex align-items-center">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+          <img src={logo} alt="restaurant logo" />
+        </a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <nav className="navbar-nav ms-auto">
+            <a href='/#home' className="nav-item m-auto nav-link">
+              <img src={home} alt='home icon' /> Home
+            </a>
+            <a href="/#about" className="nav-item m-auto nav-link">About</a>
+            <a href='/#specials' className='nav-item m-auto nav-link'>Specials</a>
+            <Link to='reservations' className='nav-item m-auto nav-link'>Reservations</Link>
+            <Link to='login' className='nav-item m-auto nav-link'>Login</Link>
           </nav>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }

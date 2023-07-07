@@ -1,15 +1,18 @@
-export default function MenuCard(special) {
+export default function MenuCard(data) {
   return (
-    <div className="menu-card card" style={{width: "260px"}}>
-      <img src={special.imgUrl} className="card-img-top specials-img w-100" alt={special.title} />
-      <div className="card-body">
-        <h2 className="card-title d-flex justify-content-between">
-          <span>{special.title}</span>
-          <span className="price">{special.price}</span>
-        </h2>
-        <p className="para-text">{special.description}</p>
-        <h4>Order a delivery 🛵</h4>
-      </div>
+    <div className="menu-card card col-10 col-sm-6 col-md-4 mb-3 py-3">
+        <div className="card-img-top">
+            <img className="w-100 rounded-2" src={data.imgUrl} alt={data.title} />
+        </div>
+        <div className="card-body">
+            <h5 className="card-title d-flex justify-content-between">
+                {data.title}
+                <span className="text-warning">{data.price}</span>
+            </h5>
+            <p className="card-text">{data.description}</p>
+            <p className="card-text"></p>
+        </div>
+        <h5>🛵 Book your order!</h5>
     </div>
   )
 }

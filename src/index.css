@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Markazi+Text:wght@400;500;600;700&display=swap');
+:root{
+    font-family: 'Markazi Text', serif;
+    font-size: 16px 400;
+    color: #fff;
+
+    --section-title: 20px;
+    --karla: 'Karla', sans-serif;
+    --markazi: 'Markazi', sans-serif;
+    --specials-text: 16px 800;
+    --card-title: 18px 700;
+    --para-text: 16px 400;
+    --highlight-text: 16px 500;
+    --yellow: #f4ce14;
+    --green: #495e57;
+    --rounded: 16px;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-width{
+    max-width: 960px;
+}

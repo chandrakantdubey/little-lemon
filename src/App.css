@@ -1,105 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
-
-*{
-    font-family: 'Markazi Text', serif;
+/* header */
+header{
+    padding: 1.5rem 0;
 }
-
-/* fonts */
-.title{
-    font-size: 64px;
-    font-weight: medium;
+header a{
+    scale: 1.05;
 }
-.subtitle{
-    font-size: 40px;
-    font-weight: 40px;
-}
-.lead-text{
-    font-size: 18px;
-    font-weight: medium;
-    font-family: 'Karla', sans-serif;
-}
-.section-title-uppercase{
-    font-size: 20px;
-    font-weight: 700;
-}
-.nav-text{
-    font-size: 20px;
-    font-weight: medium;
-}
-.nav-text a:hover{
+header a:hover{
     scale: 1.1;
-    text-decoration: underline;
-}
-.specials-text{
-    font-size: 16px;
-    font-weight: 700;
-}
-.card-title{
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Karla', sans-serif;
-}
-.para-text{
-    font-size: 16px;
-    line-height: 1.5;
-}
-.highlight-text{
-    font-size: 16px;
-    font-weight: medium;
+    text-decoration-line: underline;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 0.25rem;
 }
 
-/* colors */
-.green-bg{
-    background: #495E57;
+/* CTA */
+#home{
+    background-color: var(--green);
+    margin-bottom: 110px;
 }
-.green-text{
-    color: #495E57;
+.title-text{
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    color: var(--yellow);
+    margin-bottom: 0;
 }
-.yellow-bg{
-    background-color: #F4CE14;
+.subtitle-text{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    color: #fff;
+    line-height: 40px;
 }
-.yellow-text{
-    color: #F4CE14;
-}
-.white-text{
+.description-text{
+    font-size: 18px;
     color: #fff;
 }
+.book-btn{
+    padding: 1rem 2.5rem;
+    border-radius: var(--rounded);
+    background-color: var(--yellow);
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    box-shadow: 0 0 1px #000;
+}
+.cta-btn:hover{
+    background-color: #fff;
+    color: var(--green);
+    font-weight: 700;
+}
+.cta-img{
+    margin-bottom: -100px;
+}
 
-/* call to action */
-.callToAction_img-container{
-    display: flex;
-    justify-content: center;
-}
-.callToAction_img{
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 20px;
+
+/* Specials */
+.card-img-top img {
+    height: 250px;
+    object-fit: cover;
 }
 
 
-/* width of the page */
-.layout-width{
-    max-width: 840px;
-    margin: auto;
+/* testimonials */
+#testimonials{
+    background: #fbdabb url('./little-lemon-assets/images_assets/asset.png') no-repeat top center;
+}
+.review-img-container{
+    object-fit: cover;
+}
+.review-img-container img{
+    border-radius: 50%;
+    height: 90px;
+    width: 60px;
+}
+.testimonial-text{
+    text-shadow: 0 1px 1px #000;
 }
 
-.btn{
-    font-size: 18px;
-    font-weight: medium;
-    font-family: 'Karla', sans-serif;
-    padding: 0.75rem 3rem;
-    border-radius: 16px;
+
+/* about */
+#about{
+    padding: 4rem 0rem;
+    background: #edefee;
 }
-.menu-card{
-    background-color: #EDEFEE;
-    border-radius: 16px;
+#about h1{
+    font-weight: bold;
+    color: var(--green);
 }
-.specials-img{
-    max-height: 180px;
-    border: 0;
-    width: 100%;
+.restaurant-img-container{
+    background: url('./little-lemon-assets/images_assets/asset.png') no-repeat bottom left;
+    background-size: 75px;
 }
-.price{
-    color: #EE9972;
+#about img{
+    max-width: 230px;
+    height: 250px;
+    box-shadow: 1px 3px 3px 5px rgb(49, 26, 26);
+}
+.restaurantChef{
+    margin-left: 100px;
+    margin-top: -100px;
+}
+.restaurantChef img{
+    border-radius: var(--rounded);
+}
+.restaurant img{
+    border-radius: var(--rounded);
 }

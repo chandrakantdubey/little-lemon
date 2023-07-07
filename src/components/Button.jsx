@@ -1,5 +1,9 @@
-export default function Button({btnText}) {
+import { Link } from "react-router-dom";
+
+export default function Button({className, btnTxt, to}) {
   return (
-    <button className='btn bg-warning'>{btnText}</button>
+    <Link className={className} to={`${to}`}>
+        {btnTxt}
+    </Link>
   )
 }
