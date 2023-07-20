@@ -6,9 +6,9 @@ export default function CTA() {
     <div id="home">
         <div className="container-fluid page-width">
           <div className="row">
-            <div className="col py-5">
+            <div className="col col-sm-6 col-md-8 py-5">
               <div className="row">
-                <h1 className="col-12 col-sm-6 col-md-8 title-text">Little Lemon</h1>
+                <h1 className="col-12  title-text">Little Lemon</h1>
               </div>
               <div className="row mb-3">
                 <h2 className="col subtitle-text">Nashik</h2>
